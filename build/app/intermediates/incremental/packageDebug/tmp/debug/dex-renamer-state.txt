@@ -1,0 +1,4 @@
+#Wed Nov 23 15:25:43 CET 2022
+base.0=/Users/oliviermul/FlutterProjects/prosus_final_app/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
+renamed.0=classes.dex
+path.0=classes.dex
