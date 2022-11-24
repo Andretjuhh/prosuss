@@ -1,3 +1,4 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_sfsymbols/flutter_sfsymbols.dart';
 import 'pages/dashboard_page.dart';
@@ -13,7 +14,8 @@ class HomeScreen extends StatefulWidget {
   State<HomeScreen> createState() => _HomeScreenState();}
 
 class _HomeScreenState extends State<HomeScreen> {
-  int _selectedIndex = 0;
+  final user = FirebaseAuth.instance.currentUser!;
+  int _selectedIndex = 2;
 
   void _navigateBottomBar(int index) {
     setState(() {
