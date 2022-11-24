@@ -136,13 +136,17 @@ class _LoginScreenState extends State<LoginScreen> {
                   children: [
                     const Text('Forgot your password?'),
                     const SizedBox(width: 5),
-                    Container(
-                      child: const Text('Click here!', style: TextStyle(fontWeight: FontWeight.bold),),
+                    GestureDetector(
+                      child: Container(
+                        child: const Text('Click here!', style: TextStyle(fontWeight: FontWeight.bold),),
+                      ),
                     )
                   ],
-                )
+                ),
 
                 // Button help
+
+
               ],
             ),
           ),
