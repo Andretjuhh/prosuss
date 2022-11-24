@@ -1,4 +1,4 @@
-#Thu Nov 24 06:35:44 CET 2022
+#Thu Nov 24 10:33:17 CET 2022
 base.0=/Users/oliviermul/Documents/GitHub/prosuss/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
 renamed.0=classes.dex
 path.0=classes.dex

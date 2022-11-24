@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1043970138842",
+    "firebase_url": "https://prosus-997bb-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "prosus-997bb",
+    "storage_bucket": "prosus-997bb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1043970138842:android:ee32d9263b4f3a5e633be3",
+        "android_client_info": {
+          "package_name": "nl.prosuss.dev.prosus_final_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1043970138842-gksi2t08jgu53b1l5l3set3ldmqbk2ul.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC699W4jN0l3pGRVSvy6phIlxt-bHDVgTg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1043970138842-gksi2t08jgu53b1l5l3set3ldmqbk2ul.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
