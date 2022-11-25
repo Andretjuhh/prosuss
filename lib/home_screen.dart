@@ -35,7 +35,8 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.white,
+        backgroundColor: Color(0xfff8fbff),
+        shadowColor: Color(0xff2b70cf),
         title: Image.asset('images/White-Blue_Brand.png', height: 180),
       ),
       endDrawer: Drawer(
@@ -43,7 +44,7 @@ class _HomeScreenState extends State<HomeScreen> {
         child: ListView(
           padding: EdgeInsets.zero,
           children: [
-            DrawerHeader(decoration: BoxDecoration(color: Colors.white),
+            DrawerHeader(decoration: BoxDecoration(color: Color(0xfff8fbff)),
             child: Image.asset('images/White-Blue_Brand.png', height: 180),
             ),
           ],
@@ -52,7 +53,7 @@ class _HomeScreenState extends State<HomeScreen> {
       body: _pages[_selectedIndex],
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
-        backgroundColor: Colors.white,
+        backgroundColor: Color(0xfff8fbff),
         selectedItemColor: Colors.black,
         currentIndex: _selectedIndex,
         onTap: _navigateBottomBar,

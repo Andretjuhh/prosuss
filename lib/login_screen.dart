@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_sfsymbols/flutter_sfsymbols.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:prosus/help_page.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({Key? key}) : super(key: key);
@@ -30,79 +31,71 @@ class _LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: const Color(0xfff8fbff),
       body: SafeArea(
         child: Center(
           child: SingleChildScrollView(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                // Logo
 
+                // Logo
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 65),
                   child: Image.asset('images/Trans-Blue_Brand.png'),
                 ),
-
                 const SizedBox(height: 50),
 
                 // Input email
-
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 25),
-                  child: Container(
-                    child: TextField(
-                      controller: _emailController,
-                      decoration: InputDecoration(
-                          enabledBorder: OutlineInputBorder(
-                            borderSide: BorderSide(color: Colors.grey.shade400),
-                            borderRadius: BorderRadius.circular(12),
-                          ),
-                          focusedBorder: OutlineInputBorder(
-                            borderSide: BorderSide(color: Colors.blue),
-                            borderRadius: BorderRadius.circular(12),
-                          ),
-                          prefixIcon: Icon(SFSymbols.envelope),
-                          hintText: 'Email',
-                          hintStyle: TextStyle(
-                            color: Colors.black,
-                          )),
+                  child: TextField(
+                    controller: _emailController,
+                    decoration: InputDecoration(
+                        enabledBorder: OutlineInputBorder(
+                          borderSide: const BorderSide(color: Color(0xff000000)),
+                          borderRadius: BorderRadius.circular(12),
+                        ),
+                        focusedBorder: OutlineInputBorder(
+                          borderSide: const BorderSide(color: Color(0xff2b70cf)),
+                          borderRadius: BorderRadius.circular(12),
+                        ),
+                        prefixIcon: const Icon(SFSymbols.envelope),
+                        hintText: 'Email',
+                        hintStyle: const TextStyle(
+                          color: Colors.black,
+                        ),
                     ),
                   ),
                 ),
-
                 const SizedBox(height: 20),
 
                 // Input password
-
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 25),
-                  child: Container(
-                    child: TextField(
-                      controller: _passwordController,
-                      obscureText: true,
-                      decoration: InputDecoration(
-                        enabledBorder: OutlineInputBorder(
-                          borderSide: BorderSide(color: Colors.grey.shade400),
+                  child: TextField(
+                    controller: _passwordController,
+                    obscureText: true,
+                    decoration: InputDecoration(
+                      enabledBorder: OutlineInputBorder(
+                        borderSide: const BorderSide(color: Color(0xff000000)),
+                        borderRadius: BorderRadius.circular(12),
+                      ),
+                        focusedBorder: OutlineInputBorder(
+                          borderSide: const BorderSide(color: Color(0xff2b70cf)),
                           borderRadius: BorderRadius.circular(12),
                         ),
-                          focusedBorder: OutlineInputBorder(
-                            borderSide: BorderSide(color: Colors.blue),
-                            borderRadius: BorderRadius.circular(12),
-                          ),
-                          prefixIcon: Icon(SFSymbols.lock),
-                          hintText: 'Wachtwoord',
-                          hintStyle: TextStyle(
-                            color: Colors.black,
-                          )),
+                        prefixIcon: const Icon(SFSymbols.lock),
+                        hintText: 'Wachtwoord',
+                        hintStyle: const TextStyle(
+                          color: Colors.black,
+                        ),
                     ),
                   ),
                 ),
-
                 const SizedBox(height: 30),
 
                 // Button login
-
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 140),
                   child: GestureDetector(
@@ -126,27 +119,24 @@ class _LoginScreenState extends State<LoginScreen> {
                     ),
                   ),
                 ),
-
                 const SizedBox(height: 20),
 
-                // Link forgot password
-
+                // Link HelpPage
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    const Text('Forgot your password?'),
+                    const Text('Need help?'),
                     const SizedBox(width: 5),
                     GestureDetector(
-                      child: Container(
-                        child: const Text('Click here!', style: TextStyle(fontWeight: FontWeight.bold),),
-                      ),
-                    )
+                      onTap: (){
+                        Navigator.push(context, MaterialPageRoute(builder: (BuildContext context){
+                          return const HelpPage();
+                        }));
+                      },
+                      child: const Text('Click here!', style: TextStyle(fontWeight: FontWeight.bold),),
+                    ),
                   ],
                 ),
-
-                // Button help
-
-
               ],
             ),
           ),
