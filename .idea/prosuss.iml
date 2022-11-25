@@ -29,6 +29,12 @@
       <excludeFolder url="file://$MODULE_DIR$/ios/.symlinks/plugins/firebase_core/.pub" />
       <excludeFolder url="file://$MODULE_DIR$/ios/.symlinks/plugins/firebase_core/.dart_tool" />
       <excludeFolder url="file://$MODULE_DIR$/ios/.symlinks/plugins/firebase_core/build" />
+      <excludeFolder url="file://$MODULE_DIR$/ios/.symlinks/plugins/url_launcher_ios/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/ios/.symlinks/plugins/url_launcher_ios/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/ios/.symlinks/plugins/url_launcher_ios/build" />
+      <excludeFolder url="file://$MODULE_DIR$/ios/.symlinks/plugins/url_launcher_ios/example/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/ios/.symlinks/plugins/url_launcher_ios/example/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/ios/.symlinks/plugins/url_launcher_ios/example/build" />
     </content>
     <orderEntry type="jdk" jdkName="Android API 33, extension level 3 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
