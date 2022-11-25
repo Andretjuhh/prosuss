@@ -6,6 +6,7 @@ import 'pages/boeken_page.dart';
 import 'pages/oefenen_page.dart';
 import 'pages/vakken_page.dart';
 import 'pages/voortgang_page.dart';
+import 'package:prosus/help_page.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -55,6 +56,20 @@ class _HomeScreenState extends State<HomeScreen> {
                 height: 180
               ),
             ),
+            ListTile(
+              title: Text(
+                  'Help',
+                  style: TextStyle(
+                      fontSize: 20,
+                      color: Color(0xffffffff),
+                  ),
+              ),
+              onTap: (){
+                Navigator.push(context, MaterialPageRoute(builder: (BuildContext context){
+                  return const HelpPage();
+                }));
+              },
+            )
           ],
         ),
       ),
