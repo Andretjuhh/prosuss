@@ -60,10 +60,10 @@ class _LoginScreenState extends State<LoginScreen> {
                           borderSide: const BorderSide(color: Color(0xff2b70cf)),
                           borderRadius: BorderRadius.circular(12),
                         ),
-                        prefixIcon: const Icon(SFSymbols.envelope),
+                        prefixIcon: IconTheme(data: IconThemeData(color: Color(0xff2b70cf)), child: Icon(SFSymbols.envelope)),
                         hintText: 'Email',
                         hintStyle: const TextStyle(
-                          color: Colors.black,
+                          color: Color(0xff000000),
                         ),
                     ),
                   ),
@@ -85,10 +85,10 @@ class _LoginScreenState extends State<LoginScreen> {
                           borderSide: const BorderSide(color: Color(0xff2b70cf)),
                           borderRadius: BorderRadius.circular(12),
                         ),
-                        prefixIcon: const Icon(SFSymbols.lock),
+                        prefixIcon: IconTheme(data: IconThemeData(color: Color(0xff2b70cf)), child: Icon(SFSymbols.lock)),
                         hintText: 'Wachtwoord',
                         hintStyle: const TextStyle(
-                          color: Colors.black,
+                          color: Color(0xff000000),
                         ),
                     ),
                   ),
@@ -111,7 +111,7 @@ class _LoginScreenState extends State<LoginScreen> {
                           'Login',
                           style: TextStyle(
                               fontSize: 18,
-                              color: Colors.white,
+                              color: Color(0xffffffff),
                               fontWeight: FontWeight.bold,
                           ),
                         ),
@@ -125,7 +125,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    const Text('Need help?'),
+                    const Text('Hulp nodig?'),
                     const SizedBox(width: 5),
                     GestureDetector(
                       onTap: (){
@@ -133,7 +133,11 @@ class _LoginScreenState extends State<LoginScreen> {
                           return const HelpPage();
                         }));
                       },
-                      child: const Text('Click here!', style: TextStyle(fontWeight: FontWeight.bold),),
+                      child: const Text('Klik hier!',
+                        style: TextStyle(
+                            fontWeight: FontWeight.bold
+                        ),
+                      ),
                     ),
                   ],
                 ),

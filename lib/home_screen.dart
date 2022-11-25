@@ -35,17 +35,25 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        iconTheme: IconThemeData(color: Color(0xff000000)),
         backgroundColor: Color(0xfff8fbff),
         shadowColor: Color(0xff2b70cf),
         title: Image.asset('images/White-Blue_Brand.png', height: 180),
       ),
       endDrawer: Drawer(
+
         backgroundColor: Colors.transparent,
         child: ListView(
           padding: EdgeInsets.zero,
           children: [
-            DrawerHeader(decoration: BoxDecoration(color: Color(0xfff8fbff)),
-            child: Image.asset('images/White-Blue_Brand.png', height: 180),
+            DrawerHeader(
+              decoration: BoxDecoration(
+                  color: Color(0xfff8fbff),
+               ),
+              child: Image.asset(
+                'images/White-Blue_Brand.png',
+                height: 180
+              ),
             ),
           ],
         ),
@@ -54,7 +62,7 @@ class _HomeScreenState extends State<HomeScreen> {
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
         backgroundColor: Color(0xfff8fbff),
-        selectedItemColor: Colors.black,
+        selectedItemColor: Color(0xff000000),
         currentIndex: _selectedIndex,
         onTap: _navigateBottomBar,
         items: const <BottomNavigationBarItem>[
