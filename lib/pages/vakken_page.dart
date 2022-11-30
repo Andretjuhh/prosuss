@@ -35,7 +35,7 @@ class _VakkenPageState extends State<VakkenPage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Container(
-              child: Text(
+              child: const Text(
                 'Vakken',
                 style: TextStyle(
                     fontSize: 30

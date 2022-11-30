@@ -28,6 +28,7 @@ class _LoginScreenState extends State<LoginScreen> {
     _passwordController.dispose();
     super.dispose();
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -38,7 +39,6 @@ class _LoginScreenState extends State<LoginScreen> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-
                 // Logo
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 65),
@@ -60,7 +60,10 @@ class _LoginScreenState extends State<LoginScreen> {
                           borderSide: const BorderSide(color: Color(0xff2b70cf)),
                           borderRadius: BorderRadius.circular(12),
                         ),
-                        prefixIcon: IconTheme(data: IconThemeData(color: Color(0xff2b70cf)), child: Icon(SFSymbols.envelope)),
+                        prefixIcon: const IconTheme(
+                            data: IconThemeData(color: Color(0xff2b70cf)),
+                            child: Icon(SFSymbols.envelope),
+                        ),
                         hintText: 'Email',
                         hintStyle: const TextStyle(
                           color: Color(0xff000000),
@@ -85,7 +88,10 @@ class _LoginScreenState extends State<LoginScreen> {
                           borderSide: const BorderSide(color: Color(0xff2b70cf)),
                           borderRadius: BorderRadius.circular(12),
                         ),
-                        prefixIcon: IconTheme(data: IconThemeData(color: Color(0xff2b70cf)), child: Icon(SFSymbols.lock)),
+                        prefixIcon: const IconTheme(
+                            data: IconThemeData(color: Color(0xff2b70cf)),
+                            child: Icon(SFSymbols.lock)
+                        ),
                         hintText: 'Wachtwoord',
                         hintStyle: const TextStyle(
                           color: Color(0xff000000),
@@ -133,7 +139,8 @@ class _LoginScreenState extends State<LoginScreen> {
                           return const HelpPage();
                         }));
                       },
-                      child: const Text('Klik hier!',
+                      child: const Text(
+                        'Klik hier!',
                         style: TextStyle(
                             fontWeight: FontWeight.bold
                         ),
