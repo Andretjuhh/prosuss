@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>1043970138842-iq95rh3fe9fcia1mbgrg3d76cf6qb09j.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.1043970138842-iq95rh3fe9fcia1mbgrg3d76cf6qb09j</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDQQLXuClDPyBHk6Hf-UoanE9DnHXltnm4</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1043970138842</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>nl.prosuss.dev.prosusFinalApp</string>
+	<key>PROJECT_ID</key>
+	<string>prosus-997bb</string>
+	<key>STORAGE_BUCKET</key>
+	<string>prosus-997bb.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1043970138842:ios:79dfbd2ef7ab44b9633be3</string>
+	<key>DATABASE_URL</key>
+	<string>https://prosus-997bb-default-rtdb.europe-west1.firebasedatabase.app</string>
+</dict>
+</plist>

@@ -1,3 +1,4 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
 class DashboardPage extends StatelessWidget {
@@ -6,7 +7,23 @@ class DashboardPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: Text('Dashboard', style: TextStyle(fontSize: 30),),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Text(
+            'Dashboard', 
+            style: TextStyle(
+                fontSize: 30
+            ),
+          ),
+          MaterialButton(onPressed: (){
+            FirebaseAuth.instance.signOut();
+          },
+            color: Color(0xff2b70cf),
+            child: Text('Sign out'),
+          ),
+        ],
+      ),
     );
   }
 }
