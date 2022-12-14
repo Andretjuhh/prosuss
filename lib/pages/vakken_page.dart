@@ -1,5 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:prosus/pages/bpm_cijfers.dart';
+import 'package:prosus/pages/cn_cijfers.dart';
+import 'package:prosus/pages/db_cijfers.dart';
+import 'package:prosus/pages/es_cijfers.dart';
+import 'package:prosus/pages/pr1_cijfers.dart';
+import 'package:prosus/pages/pr2_cijfers.dart';
+import 'package:prosus/pages/se1_cijfers.dart';
 import 'package:url_launcher/link.dart';
 
 class VakkenPage extends StatelessWidget {
@@ -29,7 +35,7 @@ class VakkenPage extends StatelessWidget {
                             child: Text("CIJFERS"),
                             onPressed: () {
                               Navigator.push(context, MaterialPageRoute(builder: (BuildContext context){
-                                return const Cijferspage();
+                                return const BPMCijfers();
                               }));
                             },
                           ),
@@ -62,7 +68,9 @@ class VakkenPage extends StatelessWidget {
                             ),
                             child: Text("CIJFERS"),
                             onPressed: () {
-                              print("Brightspace");
+                              Navigator.push(context, MaterialPageRoute(builder: (BuildContext context){
+                                return const PR1Cijfers();
+                              }));
                             },
                           ),
                           Link(
@@ -94,7 +102,9 @@ class VakkenPage extends StatelessWidget {
                             ),
                             child: Text("CIJFERS"),
                             onPressed: () {
-                              print("Brightspace");
+                              Navigator.push(context, MaterialPageRoute(builder: (BuildContext context){
+                                return const CNCijfers();
+                              }));
                             },
                           ),
                           Link(
@@ -126,7 +136,9 @@ class VakkenPage extends StatelessWidget {
                             ),
                             child: Text("CIJFERS"),
                             onPressed: () {
-                              print("Brightspace");
+                              Navigator.push(context, MaterialPageRoute(builder: (BuildContext context){
+                                return const SE1Cijfers();
+                              }));
                             },
                           ),
                           Link(
@@ -158,7 +170,9 @@ class VakkenPage extends StatelessWidget {
                             ),
                             child: Text("CIJFERS"),
                             onPressed: () {
-                              print("Brightspace");
+                              Navigator.push(context, MaterialPageRoute(builder: (BuildContext context){
+                                return const DBCijfers();
+                              }));
                             },
                           ),
                           Link(
@@ -190,7 +204,9 @@ class VakkenPage extends StatelessWidget {
                             ),
                             child: Text("CIJFERS"),
                             onPressed: () {
-                              print("Brightspace");
+                              Navigator.push(context, MaterialPageRoute(builder: (BuildContext context){
+                                return const PR2Cijfers();
+                              }));
                             },
                           ),
                           Link(
@@ -222,7 +238,9 @@ class VakkenPage extends StatelessWidget {
                             ),
                             child: Text("CIJFERS"),
                             onPressed: () {
-                              print("Brightspace");
+                              Navigator.push(context, MaterialPageRoute(builder: (BuildContext context){
+                                return const ESCijfers();
+                              }));
                             },
                           ),
                           Link(
@@ -254,7 +272,9 @@ class VakkenPage extends StatelessWidget {
                             ),
                             child: Text("CIJFERS"),
                             onPressed: () {
-                              print("Brightspace");
+                              Navigator.push(context, MaterialPageRoute(builder: (BuildContext context){
+                                return const SE1Cijfers();
+                              }));
                             },
                           ),
                           Link(

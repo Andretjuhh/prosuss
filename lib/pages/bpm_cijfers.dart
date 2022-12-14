@@ -1,13 +1,23 @@
 import 'package:flutter/material.dart';
 
-class Cijferspage extends StatelessWidget {
-  const Cijferspage({Key? key}) : super(key: key);
+class BPMCijfers extends StatelessWidget {
+  const BPMCijfers({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
+          leading: IconButton(
+            onPressed: () {
+              Navigator.of(context).pop();
+            },
+            icon: Icon(
+              Icons.arrow_back,
+              color: Colors.black,
+            ),
+          ),
           iconTheme: IconThemeData(color: Color(0xff000000)),
           backgroundColor: Color(0xfff8fbff),
           shadowColor: Color(0xff2b70cf),
