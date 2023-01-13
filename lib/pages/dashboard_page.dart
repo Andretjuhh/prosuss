@@ -1,5 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:prosus/pages/bibliotheek_page.dart';
 
 class DashboardPage extends StatelessWidget {
   const DashboardPage({Key? key}) : super(key: key);
@@ -21,6 +22,19 @@ class DashboardPage extends StatelessWidget {
           },
             color: Color(0xff2b70cf),
             child: Text('Sign out'),
+          ),
+
+          TextButton(
+            style: TextButton.styleFrom(
+              backgroundColor: Color(0xff2b70cf),
+              foregroundColor: Colors.white,
+            ),
+            child: Text("Bibliotheek"),
+            onPressed: () {
+              Navigator.push(context, MaterialPageRoute(builder: (BuildContext context){
+                return const Bibliotheek();
+              }));
+            },
           ),
         ],
       ),

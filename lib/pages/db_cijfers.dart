@@ -29,6 +29,10 @@ class DBCijfers extends StatelessWidget {
               Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
+                  const SizedBox(
+                    height: 20.0,
+                    width: 30.0,
+                  ),
                   const Text("Databases",
                     textAlign: TextAlign.center,
                     style: TextStyle(fontSize: 25.0),

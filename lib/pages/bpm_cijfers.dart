@@ -29,25 +29,29 @@ class BPMCijfers extends StatelessWidget {
               Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
-                  const Text("Business Process Management",
+                  const SizedBox(
+                    height: 20.0,
+                    width: 30.0,
+                  ),
+                  Text("Business Process Management",
                     textAlign: TextAlign.center,
                     style: TextStyle(fontSize: 25.0),
                   ),
-                  const Card(
+                  Card(
                     child: ListTile(
                       leading: Text("0,0"),
                       title: Text("BPM Deel 1"),
                       subtitle: Text("27 september 2022"),
                     ),
                   ),
-                  const Card(
+                  Card(
                     child: ListTile(
                       leading: Text("0,0"),
                       title: Text("BPM Deel 2"),
                       subtitle: Text("2 november 2022"),
                     ),
                   ),
-                  const Card(
+                  Card(
                     child: ListTile(
                       leading: Text("0,0"),
                       title: Text("BPM totaal"),

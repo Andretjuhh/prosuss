@@ -29,6 +29,10 @@ class CNCijfers extends StatelessWidget {
               Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
+                  const SizedBox(
+                    height: 20.0,
+                    width: 30.0,
+                  ),
                   const Text("Computer Networks",
                     textAlign: TextAlign.center,
                     style: TextStyle(fontSize: 25.0),

@@ -32,7 +32,8 @@ flutter:
   uses-material-design: true
 
   assets:
-    - images/
+    - images/bieb_plattegrond.JPG
+    - images/White-Blue_Brand.png
 
   fonts:
     - family: sficonsets

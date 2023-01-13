@@ -6,6 +6,7 @@ import 'package:prosus/pages/es_cijfers.dart';
 import 'package:prosus/pages/pr1_cijfers.dart';
 import 'package:prosus/pages/pr2_cijfers.dart';
 import 'package:prosus/pages/se1_cijfers.dart';
+import 'package:prosus/pages/se2_cijfers.dart';
 import 'package:url_launcher/link.dart';
 
 class VakkenPage extends StatelessWidget {
@@ -273,7 +274,7 @@ class VakkenPage extends StatelessWidget {
                             child: Text("CIJFERS"),
                             onPressed: () {
                               Navigator.push(context, MaterialPageRoute(builder: (BuildContext context){
-                                return const SE1Cijfers();
+                                return const SE2Cijfers();
                               }));
                             },
                           ),
