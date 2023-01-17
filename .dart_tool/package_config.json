@@ -164,6 +164,12 @@
       "languageVersion": "2.17"
     },
     {
+      "name": "go_router",
+      "rootUri": "file:///C:/Flutter/.pub-cache/hosted/pub.dartlang.org/go_router-6.0.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
       "name": "html",
       "rootUri": "file:///C:/Flutter/.pub-cache/hosted/pub.dartlang.org/html-0.15.1",
       "packageUri": "lib/",
@@ -198,6 +204,12 @@
       "rootUri": "file:///C:/Flutter/.pub-cache/hosted/pub.dartlang.org/lints-2.0.1",
       "packageUri": "lib/",
       "languageVersion": "2.17"
+    },
+    {
+      "name": "logging",
+      "rootUri": "file:///C:/Flutter/.pub-cache/hosted/pub.dartlang.org/logging-1.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
     },
     {
       "name": "matcher",
@@ -368,7 +380,7 @@
       "languageVersion": "2.18"
     }
   ],
-  "generated": "2023-01-17T14:48:43.145921Z",
+  "generated": "2023-01-17T20:56:58.358757Z",
   "generator": "pub",
   "generatorVersion": "2.18.5"
 }

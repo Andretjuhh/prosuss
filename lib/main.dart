@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:prosus/main_page.dart';
 import 'package:prosus/pages/profile_page.dart';
 import 'firebase_options.dart';
-
-
+import 'package:go_router/go_router.dart';
+import 'package:prosus/home_screen.dart';
 
 void main() async{
   WidgetsFlutterBinding.ensureInitialized();
