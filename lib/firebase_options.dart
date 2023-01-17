@@ -21,15 +21,9 @@ class DefaultFirebaseOptions {
     }
     switch (defaultTargetPlatform) {
       case TargetPlatform.android:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for android - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return android;
       case TargetPlatform.iOS:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for ios - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return ios;
       case TargetPlatform.macOS:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for macos - '
@@ -61,5 +55,25 @@ class DefaultFirebaseOptions {
     databaseURL: 'https://prosus-997bb-default-rtdb.europe-west1.firebasedatabase.app',
     storageBucket: 'prosus-997bb.appspot.com',
     measurementId: 'G-YJ69KMVVXH',
+  );
+
+  static const FirebaseOptions android = FirebaseOptions(
+    apiKey: 'AIzaSyC699W4jN0l3pGRVSvy6phIlxt-bHDVgTg',
+    appId: '1:1043970138842:android:ee32d9263b4f3a5e633be3',
+    messagingSenderId: '1043970138842',
+    projectId: 'prosus-997bb',
+    databaseURL: 'https://prosus-997bb-default-rtdb.europe-west1.firebasedatabase.app',
+    storageBucket: 'prosus-997bb.appspot.com',
+  );
+
+  static const FirebaseOptions ios = FirebaseOptions(
+    apiKey: 'AIzaSyDQQLXuClDPyBHk6Hf-UoanE9DnHXltnm4',
+    appId: '1:1043970138842:ios:79dfbd2ef7ab44b9633be3',
+    messagingSenderId: '1043970138842',
+    projectId: 'prosus-997bb',
+    databaseURL: 'https://prosus-997bb-default-rtdb.europe-west1.firebasedatabase.app',
+    storageBucket: 'prosus-997bb.appspot.com',
+    iosClientId: '1043970138842-iq95rh3fe9fcia1mbgrg3d76cf6qb09j.apps.googleusercontent.com',
+    iosBundleId: 'nl.prosuss.dev.prosusFinalApp',
   );
 }

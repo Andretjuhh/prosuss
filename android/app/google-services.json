@@ -30,6 +30,13 @@
             {
               "client_id": "1043970138842-gksi2t08jgu53b1l5l3set3ldmqbk2ul.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "1043970138842-iq95rh3fe9fcia1mbgrg3d76cf6qb09j.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "nl.prosuss.dev.prosusFinalApp"
+              }
             }
           ]
         }
