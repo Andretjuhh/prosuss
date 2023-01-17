@@ -1,6 +1,8 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_sfsymbols/flutter_sfsymbols.dart';
+import 'package:prosus/pages/profile_page.dart';
+import 'package:prosus/pages/settings.dart';
 import 'pages/dashboard_page.dart';
 import 'pages/boeken_page.dart';
 import 'pages/oefenen_page.dart';
@@ -58,7 +60,7 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             ListTile(
               title: Text(
-                  'Help',
+                  'setting',
                   style: TextStyle(
                       fontSize: 20,
                       color: Color(0xffffffff),
@@ -66,10 +68,42 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
               onTap: (){
                 Navigator.push(context, MaterialPageRoute(builder: (BuildContext context){
+                  return  SettingsPage();
+                }));
+              },
+            ),
+            ListTile(
+              title: Text(
+                'Help',
+                style: TextStyle(
+                  fontSize: 20,
+                  color: Color(0xffffffff),
+                ),
+              ),
+              onTap: (){
+                Navigator.push(context, MaterialPageRoute(builder: (BuildContext context){
                   return const HelpPage();
                 }));
               },
-            )
+
+            ),  ListTile(
+              title: Text(
+                'Profile',
+                style: TextStyle(
+                  fontSize: 20,
+                  color: Color(0xffffffff),
+                ),
+              ),
+              onTap: (){
+                Navigator.push(context, MaterialPageRoute(builder: (BuildContext context){
+                  return const ProfilePage();
+                }));
+              },
+
+            ),
+
+
+
           ],
         ),
       ),
