@@ -304,4 +304,3 @@ class VakkenPage extends StatelessWidget {
     );
   }
 }
-

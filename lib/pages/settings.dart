@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 
 class SettingsPage extends StatefulWidget {
@@ -97,7 +97,9 @@ class _SettingsPageState extends State<SettingsPage> {
               child: OutlinedButton(
                 style: ButtonStyle(
                 ),
-                onPressed: () {},
+                onPressed: () {
+                  FirebaseAuth.instance.signOut();
+                },
                 child: Text("SIGN OUT",
                     style: TextStyle(
                         fontSize: 16, letterSpacing: 2.2, color: Colors.black)),
@@ -146,8 +148,6 @@ class _SettingsPageState extends State<SettingsPage> {
                     Text("Option 3"),
                   ],
                 ),
-
-
               );
             });
       },

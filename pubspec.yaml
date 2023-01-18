@@ -1,5 +1,5 @@
 name: prosus
-description: A new Flutter project.
+description: Iedereen studeert.
 
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 
@@ -16,6 +16,8 @@ dependencies:
   flutter_sfsymbols: ^2.0.0
   firebase_auth: ^4.1.3
   url_launcher: ^6.1.7
+  go_router: ^6.0.1
+  get: ^4.6.5
 
 dev_dependencies:
   flutter_test:
@@ -32,8 +34,7 @@ flutter:
   uses-material-design: true
 
   assets:
-    - images/bieb_plattegrond.JPG
-    - images/White-Blue_Brand.png
+    - images/
 
   fonts:
     - family: sficonsets
