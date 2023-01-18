@@ -41,7 +41,7 @@ class _HomeScreenState extends State<HomeScreen> {
         iconTheme: IconThemeData(color: Color(0xff000000)),
         backgroundColor: Color(0xfff8fbff),
         shadowColor: Color(0xff2b70cf),
-        title: Image.asset('images/White-Blue_Brand_Trans.png', height: 180),
+        title: Image.asset('images/Trans-Blue_Brand.png', height: 180),
         centerTitle: true,),
       endDrawer: Drawer(
 
